@@ -1,5 +1,5 @@
 import React from 'react';
-import admin from '../../../images/admin.jpg'
+import admin from '../../../images/admin3.png'
 const About = () => {
     return (
         <div className="container">

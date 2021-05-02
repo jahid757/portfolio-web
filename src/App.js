@@ -9,9 +9,15 @@ import ProjectsHome from './components/Projects/ProjectsHome/ProjectsHome';
 import BlogHome from './components/Blog/BlogHome/BlogHome';
 import ContactMe from './components/ContactMe/ContactMe';
 import Resume from './components/Resume/Resume';
+import ScrollToTop from './components/ScrollToTop';
+
+
 function App() {
+  
   return (
-    <Router>
+    <div id="scroll">
+      <Router>
+      <ScrollToTop />
       <Switch>
         <Route exact path="/">
           <Home/>
@@ -30,6 +36,7 @@ function App() {
         </Route>
       </Switch>
     </Router>
+    </div>
   );
 }
 

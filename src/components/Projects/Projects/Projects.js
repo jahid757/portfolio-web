@@ -14,14 +14,16 @@ const project = [
         img:project1,
         _id:1,
         isProject:true,
-        link:'https://transport-a67cd.web.app/'
+        link:'https://transport-a67cd.web.app/',
+        code:'https://github.com/jahid757/world-wide-transporting-system'
     },{
         name:'Doctors Portal',
         description:"Doctor Portal Website is an authentic website. If a doctor logs in to this website, he will be able to see his appointment. New doctors will be able to add. See the list of all Patients. Can you check if you have an appointment today? A patient will be able to view his booked appointment list.",
         img:project4,
         _id:4,
         isProject:true,
-        link:'https://doctor-portal-773fe.web.app/'
+        link:'https://doctor-portal-773fe.web.app/',
+        code:'https://github.com/jahid757/doctor_portal_client'
     },
     {
         name:'E-Commerce Development',
@@ -29,7 +31,8 @@ const project = [
         img:project2,
         _id:2,
         isProject:true,
-        link:'https://electro-1ba9f.web.app/'
+        link:'https://electro-1ba9f.web.app/',
+        code:'https://github.com/jahid757/electronic-shop'
     },
     {
         name:'Penguin Fashion',
@@ -37,7 +40,8 @@ const project = [
         img:project5,
         _id:3,
         isProject:true,
-        link:'https://jahid757.github.io/assignment-2/index.html'
+        link:'https://jahid757.github.io/assignment-2/index.html',
+        code:'https://github.com/jahid757/assignment-2'
     },
     
     {
@@ -46,7 +50,8 @@ const project = [
         img:project3,
         _id:5,
         isProject:true,
-        link:'https://bd-riders-86204.web.app/'
+        link:'https://bd-riders-86204.web.app/',
+        code:'https://github.com/jahid757/bd-raiders'
     },
     {
         name:'Football Sports Leagues',
@@ -54,7 +59,8 @@ const project = [
         img:project6,
         _id:6,
         isProject:true,
-        link:'https://jovial-mestorf-e043cb.netlify.app/'
+        link:'https://jovial-mestorf-e043cb.netlify.app/',
+        code:'https://github.com/jahid757/football-team'
     }
 ]
 
