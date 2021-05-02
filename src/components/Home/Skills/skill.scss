@@ -1,0 +1,57 @@
+.content-wrapper{
+    background-color: #101010;
+    padding: 20px 0;
+    color: #fff;
+}
+.skill-card {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .percent {
+        position: relative;
+        width: 150px;
+        height: 150px;
+
+        .number {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    svg {
+        width: 150px;
+        height: 150px;
+        position: relative;
+        z-index: 100;
+
+        circle {
+            width: 100%;
+            height: 100%;
+            fill: none;
+            stroke: #383838;
+            stroke-width: 10;
+            stroke-linecap: round;
+            transform: translate(5px, 5px);
+
+            &:nth-child(2) {
+                stroke-dasharray: 440;
+                stroke-dashoffset: 440;
+            }
+        }
+    }
+}
+
+.col-md-3 svg circle:nth-child(2) {
+    // stroke: #198754;
+    stroke: #07cc71;
+}

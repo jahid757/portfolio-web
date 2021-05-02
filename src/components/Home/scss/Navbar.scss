@@ -1,0 +1,124 @@
+@import './utilities.scss';
+.navbar-background{
+    background: rgba(0, 0, 0, 75%);
+    position: fixed;
+    top: 0;
+    height: 70px;
+    width: 100%;
+    z-index: 9000000000;
+    nav{
+        padding: 10px;
+        h1{
+            a{
+                color: #fff;
+                text-decoration: none;
+                transition: .5s;
+                font-family: $mainFont;
+                font-weight:600;
+                &:hover{
+                    color: #f45793;
+                }
+            }
+        }
+    }
+    .navbar-menu{
+        .menuIcon{
+            position: absolute;
+            top: 27px;
+            right: 50px;
+            cursor: pointer;
+            font-size: 25px;
+            display: none;
+            z-index: 100000;
+        }
+        ul{
+            margin-bottom: 0;padding-left: 0;
+            li{
+                display: inline-block;
+                a{
+                    display: block;
+                    padding: 10px 20px;
+                    color: #fff;
+                    font-weight: 600;
+                    text-decoration: none;
+                    font-size: 18px;
+                    position: relative;
+                    z-index: 2;
+                    font-family: $mainFont;
+                    margin: 0 2px;
+                    transition: .5s;
+                    // &:hover{
+                    //     color: #3c3b3b;
+                    // }
+                    &::after{
+                        content:'';
+                        position: absolute;
+                        bottom: 0;
+                        right: 0;
+                        top: 0;
+                        width: 0%;
+                        height: 100%;
+                        border-bottom:2px solid #f45793;
+                        // z-index: -1;
+                        transition: .3s;
+                    }
+                    &:hover::after{
+                        width: 100%;
+                        left: 0;
+                        right: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:768px){
+    .navbar-background{
+        background: #eeeeee;
+        position: fixed;
+        top: 0;
+        height: 70px;
+        width: 100%;
+        z-index: 9000000000;
+    }
+    .navbar-background .navbar-menu .menuIcon{
+        display: block;
+        color: #101;
+    }
+    .navbar-background .navbar-menu ul{
+        transform: scaleY(0);
+        transition: .5s;
+    }
+    .logo{
+        position: absolute;
+        z-index: 100000;
+        top: 20px;
+        left: 50px;
+        a{
+            color: #101 !important;
+        }
+    }
+    .navbar-background .navbar-menu ul.active{
+        transform: scaleY(1);
+        background: rgb(238, 238, 238);
+        position: fixed;
+        top: 0px;
+        padding-top: 70px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        height: 100%;
+        z-index: 10000;
+        text-align: center;
+        li{
+            display: block;
+            a{
+                color: #101;
+                &::after{
+                    border-color: transparent;
+                }
+            }
+        }
+    }
+}

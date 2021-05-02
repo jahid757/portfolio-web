@@ -1,0 +1,22 @@
+.header-background{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)), url('../../../images/header-background1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    padding-top: 10px;
+}
+.title {
+    margin-top: 20%;
+    text-align: center;
+}
+@media (min-width:768px){
+    .title {
+        margin-top: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+}
